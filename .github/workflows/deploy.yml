@@ -1,0 +1,5 @@
+name: Deplay to Azure ACI
+
+on:
+  push:
+    branches: ("main")
