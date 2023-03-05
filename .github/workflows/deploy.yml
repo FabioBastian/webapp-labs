@@ -84,15 +84,15 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
       - name: Deploy da Nossa Aplicação Hello Java
-        uses: Azure/aci-deploy@vl
+        uses: Azure/aci-deploy@v1
         with:
           resource-group: RG-APPS-CRESCER
           dns-name-label: lab-crescer-fabio-bastian
           image: fabiobastian/javacrescer:latest
           cpu: 1
-          menory: 1
+          memory: 1
           registry-login-server: docker.io
-          registry-username: ${{ secrets. REGISTRY_USERNAME }}
-          registry-password: ${{ secrets.REGISTRY_PASSWORD }}
+          registry-username: ${{ secrets.REGISTRY_USERNAME }}  
+          registry-password: ${{ secrets.REGISTRY_PASSWORD }}  
           name: lab-crescer-fabio-bastian
-          location: "east-us"
+          location: 'east us' 
